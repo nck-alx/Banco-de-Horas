@@ -24,7 +24,7 @@ public class CoordDAO {
          //INSERT INTO funcionario (nome, email, senha , telefone, endereço,cep, fk_id_setor, fk_id_coord)
         //VALUES ("Maria", "maria@teste.com", "teste", 11956321254,"Rua Antonio da Fonseca Coelho 181", 10233654,1,1);
         
-        String sql = "INSERT INTO funcionario (nome, email, senha, telefone, endereco, cep ,fk_id_setor) "
+        String sql = "INSERT INTO funcionario (nome, email, senha, telefone, endereço, cep, fk_id_setor) "
                    + "VALUES (?, ?, ?, ?, ?, ?, ?)";
 
         try (Connection conn = ConectaBanco.conectar();
@@ -50,7 +50,7 @@ public class CoordDAO {
                 //INSERT INTO coordenador (nome, email, senha, telefone,endereco , cep, fk_id_setor)
                 //VALUES ("Rayssa", "adm@email.com", "adm", 40028922,"Rua José Luiz Moreira 460",12365789,1);
      public boolean cadastrar(Coordenador user ) throws ClassNotFoundException{    
-        String sql = "INSERT INTO coordenador (nome, email, senha, telefone, endereco, cep, fk_id_setor) "
+        String sql = "INSERT INTO coordenador (nome, email, senha, telefone, endereço, cep, fk_id_setor) "
                    + "VALUES (?, ?, ?, ?, ?, ?, ?)";
 
         try (Connection conn = ConectaBanco.conectar();
