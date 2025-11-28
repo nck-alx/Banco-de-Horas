@@ -32,35 +32,39 @@
             if (lista == null || lista.isEmpty()) {
                     out.println("<h3>Nenhum funcionário encontrado!</h3>");
                 } else {
-            for(Funcionario f : lista){
         %>
+           
+        
         <table class="tabela-setores">
-            
+         
         <thead>
         <tr>
             <th>Nome</th>
             <th>ID</th>
+            <th> </th>
         </tr>
-        </thead>
-            
-        <tbody>
+        </thead>  
+        <tbody> 
+            <%for(Funcionario f : lista){%>
                 <tr>
                     <td><%= f.getNome() %></td>
+                    
                     <td><%= f.getId() %> </td>
-                <td>
+                    <td>
                         <a class="btn-excluir"
                            href="processaExclusao.jsp?id=<%= f.getId() %>"
                            onclick="return confirm('Deseja realmente excluir <%= f.getNome() %>?');">
-                            Excluir
-                        </a>
+                            Excluir</a>
                     </td>
                 </tr>
-            </thead>
+                <%
+                    }
+                    %>
+        </tbody>
         </table>
     </body>
 </html>
 <%
     }
-}
-%>
 
+%>
