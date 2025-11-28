@@ -19,7 +19,7 @@ public class ConectaBanco {
         Connection conn = null; 
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bancohoras","root","");            
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3307/bancohoras","root","");            
         }catch(SQLException ex){
                 System.out.println("Erro - SQL: " + ex);
         }

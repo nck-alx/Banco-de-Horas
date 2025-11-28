@@ -24,8 +24,8 @@ public class CoordDAO {
          //INSERT INTO funcionario (nome, email, senha , telefone, endereço,cep, fk_id_setor, fk_id_coord)
         //VALUES ("Maria", "maria@teste.com", "teste", 11956321254,"Rua Antonio da Fonseca Coelho 181", 10233654,1,1);
         
-        String sql = "INSERT INTO funcionario (nome, email, senha, telefone, endereco, cep ,fk_id_setor, fk_id_coord) "
-                   + "VALUES (?, ?, ?, ?, ?, ?,?,?)";
+        String sql = "INSERT INTO funcionario (nome, email, senha, telefone, endereco, cep ,fk_id_setor) "
+                   + "VALUES (?, ?, ?, ?, ?, ?, ?)";
 
         try (Connection conn = ConectaBanco.conectar();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
@@ -37,7 +37,6 @@ public class CoordDAO {
             stmt.setString(5, user.getEndereco());
             stmt.setString(6, user.getCep());
             stmt.setInt(7,user.getFk_id_setor());
-            stmt.setInt(8,user.getFk_id_coord());
 
             stmt.executeUpdate();
             return true;
