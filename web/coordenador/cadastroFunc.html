@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Cadastro de Funcionário</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/geral.css" rel="stylesheet" type="text/css"/>
+    </head>
+    
+    <body>
+        <img src="../imgs/logo-sem-fundo.png" alt="logotipo" id="logotipo"/>
+       <div class="div-cad-func">
+             <h2 id="h2-cad-func">Cadastro de Funcionário</h2>
+             <br>
+            <form method="post" action="cadastroFunc.jsp" class="form-cad-func">
+                <input type="text" name="funcnome" placeholder="Nome" required="">
+                <br>
+                
+                <input type="email" name="funcmail" placeholder="exemple@gmail.com" required="">
+               
+                <input type="password" name="funcsenha" placeholder="password" required=""> 
+               
+                <input type="number" name="functel" placeholder="Telefone" required="">
+                
+                <input type="text" name="func_end" placeholder="Endereço" required="">
+               
+                <input type="text" name="func_cep" placeholder="CEP" required="">
+                <br><br>
+                <label for="dep" id="selec-label">Selecione Departamento:</label>
+                <select id="dep" name="func_dep">
+                    
+                    <option value="adm">Administrativo</option>
+                    <option value="fin">Financeiro</option>
+                    <option value="ti">TI</option>
+                    <option value="mkt">Marketing</option>
+                </select>
+                 <br>
+
+                <div class="div-cad-btn">              
+                <input type="submit" value="Cadastrar" id="button-cad"> 
+                <input type="reset" value="Limpar" id="button-limpar">
+                </div> 
+
+            </form>
+        </div>
+    </body>
+</html>
