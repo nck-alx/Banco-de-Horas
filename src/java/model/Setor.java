@@ -6,7 +6,7 @@ package model;
 
 /**
  *
- * @author rayssa
+ * @author rayssa, nicolas e andré
  */
 public class Setor {
     private String nome,desc,status;

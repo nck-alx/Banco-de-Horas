@@ -8,7 +8,7 @@ import model.User;
 
 /**
  *
- * @author alunocmc
+ * @author andré, nicolas e rayssa
  */
 public class Coordenador extends User{
     private int fk_id_setor; 

@@ -7,7 +7,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 /**
  *
- * @author nicolas
+ * @author nicolas, rayssa e andré
  */
 public class Funcionario extends User{
     private int fk_id_setor;
