@@ -11,7 +11,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import model.Coordenador;
 import model.Funcionario;
-import model.User;
 
 import java.util.*;
 /**
